@@ -27,6 +27,15 @@ namespace ClaimHandler
             textBoxRepairDays.Text = $"{Math.Round(totalRepairHours / 4, 0):N0}";
         }
 
+        private void comboBoxSpokeWithShop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBoxSpokeWithShop.ReadOnly = comboBoxSpokeWithShop.SelectedIndex > 1;
+            if (textBoxSpokeWithShop.ReadOnly)
+            {
+                textBoxSpokeWithShop.Text = string.Empty;
+            }
+        }
+
         private void comboBoxChangesMade_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBoxChangesMade.ReadOnly = comboBoxChangesMade.SelectedIndex != 0;
@@ -89,7 +98,7 @@ Total repair hours: {textBoxTotalRepairHours.Text}
 Repair days: {textBoxRepairDays.Text}
 Drivable: {comboBoxDrivable.Text}
 Currently in rental? {comboBoxCurrentlyInRental.Text}
-Spoke with shop? {textBoxSpokeWithShop.Text}
+Spoke with shop? {comboBoxSpokeWithShop.Text}{textBoxSpokeWithShop.Text.PrintIfNotEmpty()}
 Changes made: {comboBoxChangesMade.Text}{textBoxChangesMade.Text.PrintIfNotEmpty()}
 Agreed price reached? {comboBoxAgreedPriceReached.Text}{textBoxAgreedPriceReached.Text.PrintIfNotEmpty()}
 Any denial? {comboBoxAnyDenial.Text}{comboBoxAnyDenialPartialFull.Text.PrintIfNotEmpty()}{textBoxAnyDenial.Text.PrintIfNotEmpty()}

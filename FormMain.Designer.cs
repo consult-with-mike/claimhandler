@@ -65,6 +65,7 @@
             this.labelNetTotalAmount = new System.Windows.Forms.Label();
             this.buttonCopy = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
+            this.comboBoxSpokeWithShop = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // labelInsuredOrClaimant
@@ -79,6 +80,8 @@
             // 
             // comboBoxInsuredOrClaimant
             // 
+            this.comboBoxInsuredOrClaimant.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxInsuredOrClaimant.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxInsuredOrClaimant.FormattingEnabled = true;
             this.comboBoxInsuredOrClaimant.Items.AddRange(new object[] {
             "Insured",
@@ -107,6 +110,8 @@
             // 
             // comboBoxTotalLoss
             // 
+            this.comboBoxTotalLoss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxTotalLoss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxTotalLoss.FormattingEnabled = true;
             this.comboBoxTotalLoss.Items.AddRange(new object[] {
             "Yes",
@@ -156,6 +161,8 @@
             // 
             // comboBoxDrivable
             // 
+            this.comboBoxDrivable.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxDrivable.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxDrivable.FormattingEnabled = true;
             this.comboBoxDrivable.Items.AddRange(new object[] {
             "Yes",
@@ -177,6 +184,8 @@
             // 
             // comboBoxCurrentlyInRental
             // 
+            this.comboBoxCurrentlyInRental.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxCurrentlyInRental.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxCurrentlyInRental.FormattingEnabled = true;
             this.comboBoxCurrentlyInRental.Items.AddRange(new object[] {
             "Yes",
@@ -198,10 +207,11 @@
             // 
             // textBoxSpokeWithShop
             // 
-            this.textBoxSpokeWithShop.Location = new System.Drawing.Point(206, 250);
+            this.textBoxSpokeWithShop.Location = new System.Drawing.Point(205, 284);
             this.textBoxSpokeWithShop.Name = "textBoxSpokeWithShop";
+            this.textBoxSpokeWithShop.ReadOnly = true;
             this.textBoxSpokeWithShop.Size = new System.Drawing.Size(567, 26);
-            this.textBoxSpokeWithShop.TabIndex = 15;
+            this.textBoxSpokeWithShop.TabIndex = 16;
             // 
             // labelSpokeWithShop
             // 
@@ -215,107 +225,116 @@
             // 
             // comboBoxChangesMade
             // 
+            this.comboBoxChangesMade.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxChangesMade.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxChangesMade.FormattingEnabled = true;
             this.comboBoxChangesMade.Items.AddRange(new object[] {
             "Yes",
             "No",
-            "N/A"});
-            this.comboBoxChangesMade.Location = new System.Drawing.Point(206, 282);
+            "Not applicable"});
+            this.comboBoxChangesMade.Location = new System.Drawing.Point(205, 316);
             this.comboBoxChangesMade.Name = "comboBoxChangesMade";
             this.comboBoxChangesMade.Size = new System.Drawing.Size(121, 28);
-            this.comboBoxChangesMade.TabIndex = 17;
+            this.comboBoxChangesMade.TabIndex = 18;
             this.comboBoxChangesMade.SelectedIndexChanged += new System.EventHandler(this.comboBoxChangesMade_SelectedIndexChanged);
             // 
             // labelChangesMade
             // 
             this.labelChangesMade.AutoSize = true;
-            this.labelChangesMade.Location = new System.Drawing.Point(15, 285);
+            this.labelChangesMade.Location = new System.Drawing.Point(14, 319);
             this.labelChangesMade.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelChangesMade.Name = "labelChangesMade";
             this.labelChangesMade.Size = new System.Drawing.Size(126, 20);
-            this.labelChangesMade.TabIndex = 16;
+            this.labelChangesMade.TabIndex = 17;
             this.labelChangesMade.Text = "Changes made?";
             // 
             // textBoxChangesMade
             // 
-            this.textBoxChangesMade.Location = new System.Drawing.Point(206, 316);
+            this.textBoxChangesMade.Location = new System.Drawing.Point(205, 350);
             this.textBoxChangesMade.Name = "textBoxChangesMade";
             this.textBoxChangesMade.ReadOnly = true;
             this.textBoxChangesMade.Size = new System.Drawing.Size(567, 26);
-            this.textBoxChangesMade.TabIndex = 18;
+            this.textBoxChangesMade.TabIndex = 19;
             // 
             // textBoxAgreedPriceReached
             // 
-            this.textBoxAgreedPriceReached.Location = new System.Drawing.Point(206, 382);
+            this.textBoxAgreedPriceReached.Location = new System.Drawing.Point(205, 416);
             this.textBoxAgreedPriceReached.Name = "textBoxAgreedPriceReached";
             this.textBoxAgreedPriceReached.ReadOnly = true;
             this.textBoxAgreedPriceReached.Size = new System.Drawing.Size(567, 26);
-            this.textBoxAgreedPriceReached.TabIndex = 21;
+            this.textBoxAgreedPriceReached.TabIndex = 22;
             // 
             // comboBoxAgreedPriceReached
             // 
+            this.comboBoxAgreedPriceReached.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxAgreedPriceReached.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxAgreedPriceReached.FormattingEnabled = true;
             this.comboBoxAgreedPriceReached.Items.AddRange(new object[] {
             "Yes",
             "No",
-            "N/A"});
-            this.comboBoxAgreedPriceReached.Location = new System.Drawing.Point(206, 348);
+            "Not applicable"});
+            this.comboBoxAgreedPriceReached.Location = new System.Drawing.Point(205, 382);
             this.comboBoxAgreedPriceReached.Name = "comboBoxAgreedPriceReached";
             this.comboBoxAgreedPriceReached.Size = new System.Drawing.Size(121, 28);
-            this.comboBoxAgreedPriceReached.TabIndex = 20;
+            this.comboBoxAgreedPriceReached.TabIndex = 21;
             this.comboBoxAgreedPriceReached.SelectedIndexChanged += new System.EventHandler(this.comboBoxAgreedPriceReached_SelectedIndexChanged);
             // 
             // labelAgreedPriceReached
             // 
             this.labelAgreedPriceReached.AutoSize = true;
-            this.labelAgreedPriceReached.Location = new System.Drawing.Point(15, 351);
+            this.labelAgreedPriceReached.Location = new System.Drawing.Point(14, 385);
             this.labelAgreedPriceReached.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelAgreedPriceReached.Name = "labelAgreedPriceReached";
             this.labelAgreedPriceReached.Size = new System.Drawing.Size(170, 20);
-            this.labelAgreedPriceReached.TabIndex = 19;
+            this.labelAgreedPriceReached.TabIndex = 20;
             this.labelAgreedPriceReached.Text = "Agreed price reached?";
             // 
             // textBoxAnyDenial
             // 
-            this.textBoxAnyDenial.Location = new System.Drawing.Point(206, 448);
+            this.textBoxAnyDenial.Location = new System.Drawing.Point(205, 482);
             this.textBoxAnyDenial.Name = "textBoxAnyDenial";
             this.textBoxAnyDenial.ReadOnly = true;
             this.textBoxAnyDenial.Size = new System.Drawing.Size(567, 26);
-            this.textBoxAnyDenial.TabIndex = 25;
+            this.textBoxAnyDenial.TabIndex = 26;
             // 
             // comboBoxAnyDenial
             // 
+            this.comboBoxAnyDenial.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxAnyDenial.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxAnyDenial.FormattingEnabled = true;
             this.comboBoxAnyDenial.Items.AddRange(new object[] {
             "Yes",
-            "No"});
-            this.comboBoxAnyDenial.Location = new System.Drawing.Point(206, 414);
+            "No",
+            "Not applicable"});
+            this.comboBoxAnyDenial.Location = new System.Drawing.Point(205, 448);
             this.comboBoxAnyDenial.Name = "comboBoxAnyDenial";
             this.comboBoxAnyDenial.Size = new System.Drawing.Size(121, 28);
-            this.comboBoxAnyDenial.TabIndex = 23;
+            this.comboBoxAnyDenial.TabIndex = 24;
             this.comboBoxAnyDenial.SelectedIndexChanged += new System.EventHandler(this.comboBoxAnyDenial_SelectedIndexChanged);
             // 
             // labelAnyDenial
             // 
             this.labelAnyDenial.AutoSize = true;
-            this.labelAnyDenial.Location = new System.Drawing.Point(15, 417);
+            this.labelAnyDenial.Location = new System.Drawing.Point(14, 451);
             this.labelAnyDenial.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelAnyDenial.Name = "labelAnyDenial";
             this.labelAnyDenial.Size = new System.Drawing.Size(91, 20);
-            this.labelAnyDenial.TabIndex = 22;
+            this.labelAnyDenial.TabIndex = 23;
             this.labelAnyDenial.Text = "Any denial?";
             // 
             // comboBoxAnyDenialPartialFull
             // 
+            this.comboBoxAnyDenialPartialFull.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxAnyDenialPartialFull.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxAnyDenialPartialFull.Enabled = false;
             this.comboBoxAnyDenialPartialFull.FormattingEnabled = true;
             this.comboBoxAnyDenialPartialFull.Items.AddRange(new object[] {
             "Partial",
             "Full"});
-            this.comboBoxAnyDenialPartialFull.Location = new System.Drawing.Point(333, 414);
+            this.comboBoxAnyDenialPartialFull.Location = new System.Drawing.Point(332, 448);
             this.comboBoxAnyDenialPartialFull.Name = "comboBoxAnyDenialPartialFull";
             this.comboBoxAnyDenialPartialFull.Size = new System.Drawing.Size(121, 28);
-            this.comboBoxAnyDenialPartialFull.TabIndex = 24;
+            this.comboBoxAnyDenialPartialFull.TabIndex = 25;
             // 
             // textBoxTotalRepairHours
             // 
@@ -328,104 +347,120 @@
             // 
             // textBoxGrossRepairAmount
             // 
-            this.textBoxGrossRepairAmount.Location = new System.Drawing.Point(206, 480);
+            this.textBoxGrossRepairAmount.Location = new System.Drawing.Point(205, 514);
             this.textBoxGrossRepairAmount.Name = "textBoxGrossRepairAmount";
             this.textBoxGrossRepairAmount.Size = new System.Drawing.Size(100, 26);
-            this.textBoxGrossRepairAmount.TabIndex = 27;
+            this.textBoxGrossRepairAmount.TabIndex = 28;
             this.textBoxGrossRepairAmount.TextChanged += new System.EventHandler(this.CalculateNetTotalAmount);
             this.textBoxGrossRepairAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HandleNumericKeysOnly);
             // 
             // labelGrossRepairAmount
             // 
             this.labelGrossRepairAmount.AutoSize = true;
-            this.labelGrossRepairAmount.Location = new System.Drawing.Point(15, 482);
+            this.labelGrossRepairAmount.Location = new System.Drawing.Point(14, 516);
             this.labelGrossRepairAmount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelGrossRepairAmount.Name = "labelGrossRepairAmount";
             this.labelGrossRepairAmount.Size = new System.Drawing.Size(154, 20);
-            this.labelGrossRepairAmount.TabIndex = 26;
+            this.labelGrossRepairAmount.TabIndex = 27;
             this.labelGrossRepairAmount.Text = "Gross repair amount";
             // 
             // textBoxDeductible
             // 
-            this.textBoxDeductible.Location = new System.Drawing.Point(206, 512);
+            this.textBoxDeductible.Location = new System.Drawing.Point(205, 546);
             this.textBoxDeductible.Name = "textBoxDeductible";
             this.textBoxDeductible.Size = new System.Drawing.Size(100, 26);
-            this.textBoxDeductible.TabIndex = 29;
+            this.textBoxDeductible.TabIndex = 30;
             this.textBoxDeductible.TextChanged += new System.EventHandler(this.CalculateNetTotalAmount);
             this.textBoxDeductible.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HandleNumericKeysOnly);
             // 
             // labelDeductible
             // 
             this.labelDeductible.AutoSize = true;
-            this.labelDeductible.Location = new System.Drawing.Point(15, 514);
+            this.labelDeductible.Location = new System.Drawing.Point(14, 548);
             this.labelDeductible.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelDeductible.Name = "labelDeductible";
             this.labelDeductible.Size = new System.Drawing.Size(85, 20);
-            this.labelDeductible.TabIndex = 28;
+            this.labelDeductible.TabIndex = 29;
             this.labelDeductible.Text = "Deductible";
             // 
             // textBoxAnyOtherAmounts
             // 
-            this.textBoxAnyOtherAmounts.Location = new System.Drawing.Point(206, 544);
+            this.textBoxAnyOtherAmounts.Location = new System.Drawing.Point(205, 578);
             this.textBoxAnyOtherAmounts.Name = "textBoxAnyOtherAmounts";
             this.textBoxAnyOtherAmounts.Size = new System.Drawing.Size(100, 26);
-            this.textBoxAnyOtherAmounts.TabIndex = 31;
+            this.textBoxAnyOtherAmounts.TabIndex = 32;
             this.textBoxAnyOtherAmounts.TextChanged += new System.EventHandler(this.CalculateNetTotalAmount);
             this.textBoxAnyOtherAmounts.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HandleNumericKeysOnly);
             // 
             // labelAnyOtherAmounts
             // 
             this.labelAnyOtherAmounts.AutoSize = true;
-            this.labelAnyOtherAmounts.Location = new System.Drawing.Point(15, 546);
+            this.labelAnyOtherAmounts.Location = new System.Drawing.Point(14, 580);
             this.labelAnyOtherAmounts.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelAnyOtherAmounts.Name = "labelAnyOtherAmounts";
             this.labelAnyOtherAmounts.Size = new System.Drawing.Size(143, 20);
-            this.labelAnyOtherAmounts.TabIndex = 30;
+            this.labelAnyOtherAmounts.TabIndex = 31;
             this.labelAnyOtherAmounts.Text = "Any other amounts";
             // 
             // textBoxNetTotalAmount
             // 
-            this.textBoxNetTotalAmount.Location = new System.Drawing.Point(206, 576);
+            this.textBoxNetTotalAmount.Location = new System.Drawing.Point(205, 610);
             this.textBoxNetTotalAmount.Name = "textBoxNetTotalAmount";
             this.textBoxNetTotalAmount.ReadOnly = true;
             this.textBoxNetTotalAmount.Size = new System.Drawing.Size(100, 26);
-            this.textBoxNetTotalAmount.TabIndex = 33;
+            this.textBoxNetTotalAmount.TabIndex = 34;
             // 
             // labelNetTotalAmount
             // 
             this.labelNetTotalAmount.AutoSize = true;
-            this.labelNetTotalAmount.Location = new System.Drawing.Point(15, 578);
+            this.labelNetTotalAmount.Location = new System.Drawing.Point(14, 612);
             this.labelNetTotalAmount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelNetTotalAmount.Name = "labelNetTotalAmount";
             this.labelNetTotalAmount.Size = new System.Drawing.Size(127, 20);
-            this.labelNetTotalAmount.TabIndex = 32;
+            this.labelNetTotalAmount.TabIndex = 33;
             this.labelNetTotalAmount.Text = "Net total amount";
             // 
             // buttonCopy
             // 
-            this.buttonCopy.Location = new System.Drawing.Point(206, 608);
+            this.buttonCopy.Location = new System.Drawing.Point(205, 642);
             this.buttonCopy.Name = "buttonCopy";
             this.buttonCopy.Size = new System.Drawing.Size(100, 30);
-            this.buttonCopy.TabIndex = 34;
+            this.buttonCopy.TabIndex = 35;
             this.buttonCopy.Text = "Copy";
             this.buttonCopy.UseVisualStyleBackColor = true;
             this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(312, 608);
+            this.buttonClear.Location = new System.Drawing.Point(311, 642);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(100, 30);
-            this.buttonClear.TabIndex = 35;
+            this.buttonClear.TabIndex = 36;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            // 
+            // comboBoxSpokeWithShop
+            // 
+            this.comboBoxSpokeWithShop.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBoxSpokeWithShop.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxSpokeWithShop.FormattingEnabled = true;
+            this.comboBoxSpokeWithShop.Items.AddRange(new object[] {
+            "Yes",
+            "No",
+            "Not applicable"});
+            this.comboBoxSpokeWithShop.Location = new System.Drawing.Point(205, 250);
+            this.comboBoxSpokeWithShop.Name = "comboBoxSpokeWithShop";
+            this.comboBoxSpokeWithShop.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxSpokeWithShop.TabIndex = 15;
+            this.comboBoxSpokeWithShop.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpokeWithShop_SelectedIndexChanged);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 761);
+            this.Controls.Add(this.comboBoxSpokeWithShop);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.textBoxNetTotalAmount);
@@ -466,7 +501,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormMain";
-            this.Text = "AmFam Claim Handler";
+            this.Text = "Andrea\'s Template";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,6 +545,7 @@
         private System.Windows.Forms.Label labelNetTotalAmount;
         private System.Windows.Forms.Button buttonCopy;
         private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.ComboBox comboBoxSpokeWithShop;
     }
 }
 
